@@ -5,6 +5,7 @@ import (
 	"unicode"
 )
 
+// MixCase чередует верхний и нижний регистр символов для проверки поиска без учёта регистра.
 func MixCase(text string) string {
 	var result strings.Builder
 

@@ -8,16 +8,16 @@ import (
 
 // SetupSuite действия перед запуском сьюта с тестами
 func SetupSuite() {
-	log.Println("Init environment variables")
+	log.Println("Загружаем переменные окружения")
 	utils.LoadEnv()
 }
 
 // TearDownSuite действия после запуска сьюта с тестами
 func TearDownSuite() {
-	log.Println("Tear down suite")
+	log.Println("Завершаем набор тестов")
 }
 
-// Precondition выводит текст в консоль с меткой [Precondition]
+// Precondition выводит текст в консоль с меткой «Предусловие».
 func Precondition(text string) {
-	utils.LogWithLabelAndTimeStamp("Precondition", text)
+	utils.LogWithLabelAndTimeStamp("Предусловие", text)
 }

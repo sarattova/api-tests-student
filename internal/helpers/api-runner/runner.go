@@ -63,7 +63,7 @@ func mergeServiceUrls(host string, r *url.URL) error {
 
 	urlParsed, err := url.Parse(host)
 	if err != nil {
-		return fmt.Errorf("host cannot be parsed: %s", err.Error())
+		return fmt.Errorf("не удалось разобрать адрес сервера: %s", err.Error())
 	}
 
 	if urlParsed.Path != "" {

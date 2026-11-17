@@ -8,6 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+// ContainsAdvertisementByTitle проверяет наличие объявления с точным названием в результатах поиска.
 func ContainsAdvertisementByTitle(t *testing.T, items []models.Advertisement, title string) {
 	t.Helper()
 
